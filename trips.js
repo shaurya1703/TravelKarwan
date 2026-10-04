@@ -17,11 +17,11 @@ window.TRAVEL_KARWAN_TRIPS = [
     price: "₹9,999",
     duration: "4N / 5D",
     group: "24–25 seats",
-    image: "assets/shimla-jibhi-poster.png",
+    image: "assets/Travel Karwan Shimla–Jibhi Adventure.png",
     short: "A two-mood Himachal escape — Shimla’s buzz with Jibhi’s calm.",
-    highlights: ["Shimla Special Visit", "Jibhi Waterfall", "Jalori Pass", "Serolsar Lake", "Tirthan Valley", "Bonfire & Scenic Stay"],
+    highlights: ["Shimla Special Visit", "Jibhi Waterfall", "Jalori Pass", "Serolsar Lake", "Mini Thailand", "Tirthan Valley", "Bonfire & Scenic Stay"],
     includes: ["Premium Traveller", "Hotel Stay", "Breakfast & Dinner", "Sightseeing", "Group Coordination"],
-    pickups: ["Kanpur", "Lucknow", "Delhi NCR / Gurugram"]
+    pickups: ["Kanpur", "Delhi NCR / Gurugram"]
   }
 
   // EXAMPLE FOR A FUTURE TRIP:
