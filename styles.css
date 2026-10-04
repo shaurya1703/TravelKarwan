@@ -146,12 +146,340 @@ var(--surface)}
 .featured-highlights{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:24px 0}.featured-highlights div{padding:11px 12px;border-radius:13px;background:color-mix(in srgb,var(--green) 9%,transparent);font-size:12px}.featured-highlights div:before{content:"✓";color:var(--green);font-weight:900;margin-right:7px}
 .featured-actions{display:flex;gap:10px;flex-wrap:wrap}
 
-.mood-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.mood-card{min-height:330px;padding:25px;border-radius:27px;border:1px solid var(--line);position:relative;overflow:hidden;background:var(--surface)}
-.mood-card:after{content:"";position:absolute;right:-45px;bottom:-50px;width:180px;height:180px;border-radius:50%;background:rgba(232,179,74,.08)}
-.mood-card>span{font-size:10px;color:var(--muted);letter-spacing:.15em}.mood-card h3{font-size:27px;margin:145px 0 10px}.mood-card p{color:var(--muted);font-size:13px;line-height:1.55}.mood-card a{position:absolute;bottom:24px;color:var(--gold);font-size:12px;font-weight:800;z-index:1}
-.mountain{background:linear-gradient(150deg,rgba(25,108,91,.21),var(--surface))}.weekend{background:linear-gradient(150deg,rgba(232,179,74,.15),var(--surface))}.corporate{background:linear-gradient(150deg,rgba(45,85,160,.14),var(--surface))}.road{background:linear-gradient(150deg,rgba(207,83,64,.12),var(--surface))}
+/* ==========================================================
+   EXPLORE BY MOOD - IMAGE CARDS
+========================================================== */
 
+.moods {
+  position: relative;
+  overflow: hidden;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 45px;
+}
+
+
+/* CARD */
+
+.mood-card {
+  position: relative;
+  min-height: 430px;
+  border-radius: 28px;
+  overflow: hidden;
+
+  isolation: isolate;
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.20);
+
+  transform: translateZ(0);
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease,
+    border-color 0.5s ease;
+}
+
+
+/* BACKGROUND IMAGE */
+
+.mood-bg {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -3;
+
+  transition:
+    transform 0.8s cubic-bezier(.2,.7,.2,1),
+    filter 0.5s ease;
+}
+
+
+/* DARK GRADIENT */
+
+.mood-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 12, 16, 0.05) 0%,
+      rgba(3, 12, 16, 0.15) 30%,
+      rgba(3, 12, 16, 0.75) 72%,
+      rgba(3, 12, 16, 0.96) 100%
+    );
+}
+
+
+/* EXTRA COLOR GLOW */
+
+.mood-card::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+
+  opacity: 0;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(234, 182, 74, 0.25),
+      transparent 35%
+    );
+
+  transition: opacity 0.5s ease;
+
+  pointer-events: none;
+}
+
+
+/* CONTENT */
+
+.mood-content {
+  position: relative;
+
+  height: 100%;
+  min-height: 430px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* NUMBER */
+
+.mood-number {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+
+  color: #fff;
+
+  background: rgba(0, 0, 0, 0.30);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* BOTTOM TEXT */
+
+.mood-bottom {
+  max-width: 480px;
+}
+
+.mood-bottom small {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #eab64a;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+
+.mood-bottom h3 {
+  margin: 0 0 10px;
+
+  color: #fff;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+}
+
+
+.mood-bottom p {
+  max-width: 420px;
+
+  margin: 0 0 20px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  line-height: 1.65;
+
+  font-size: 14px;
+}
+
+
+/* LINK */
+
+.mood-bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
+}
+
+.mood-bottom a b {
+  color: #eab64a;
+
+  font-size: 19px;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* ==========================================================
+   HOVER ANIMATION
+========================================================== */
+
+.mood-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(234, 182, 74, 0.35);
+
+  box-shadow:
+    0 35px 80px rgba(0, 0, 0, 0.35);
+}
+
+
+.mood-card:hover .mood-bg {
+  transform: scale(1.08);
+  filter: saturate(1.08);
+}
+
+
+.mood-card:hover::after {
+  opacity: 1;
+}
+
+
+.mood-card:hover .mood-bottom a {
+  gap: 14px;
+  color: #eab64a;
+}
+
+
+.mood-card:hover .mood-bottom a b {
+  transform: translateX(4px);
+}
+
+
+/* ==========================================================
+   CARD HEIGHT VARIATION
+========================================================== */
+
+.mood-card.mountain,
+.mood-card.corporate {
+  min-height: 480px;
+}
+
+
+.mood-card.mountain .mood-content,
+.mood-card.corporate .mood-content {
+  min-height: 480px;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+  .mood-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .mood-card,
+  .mood-card.mountain,
+  .mood-card.corporate {
+    min-height: 400px;
+  }
+
+  .mood-content,
+  .mood-card.mountain .mood-content,
+  .mood-card.corporate .mood-content {
+    min-height: 400px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 650px) {
+
+  .mood-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .mood-card,
+  .mood-card.mountain,
+  .mood-card.corporate {
+    min-height: 420px;
+    border-radius: 22px;
+  }
+
+  .mood-content,
+  .mood-card.mountain .mood-content,
+  .mood-card.corporate .mood-content {
+    min-height: 420px;
+    padding: 22px;
+  }
+
+  .mood-bottom h3 {
+    font-size: 29px;
+  }
+
+}
 .why-shell{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:48px;border-radius:38px;border:1px solid var(--line);background:var(--surface)}
 .why-copy p{color:var(--muted);line-height:1.75;max-width:540px}.why-list{display:flex;flex-direction:column}.why-list>div{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}.why-list>div:last-child{border-bottom:0}.why-list b{color:var(--gold)}.why-list strong,.why-list small{display:block}.why-list small{color:var(--muted);margin-top:4px;line-height:1.5}
 
@@ -215,4 +543,157 @@ footer{padding:48px 0 22px;border-top:1px solid var(--line);background:var(--bg2
   .contact-actions{flex-direction:column;width:100%}.contact-actions .btn{width:100%}
   .footer-grid{grid-template-columns:1fr}.footer-manager{align-items:flex-start}
   .floating-wa b{display:none}.floating-wa{padding:8px}
+}
+/* ==========================================================
+   FEATURED SHIMLA + JIBHI POSTER
+========================================================== */
+
+.featured-trip {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(340px, 1.15fr);
+  gap: clamp(35px, 6vw, 85px);
+  align-items: center;
+}
+
+.featured-poster {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.featured-poster img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 9 / 16;
+
+  object-fit: cover;
+
+  border-radius: inherit;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.poster-glow {
+  position: absolute;
+
+  left: 10%;
+  right: 10%;
+  bottom: -5%;
+
+  height: 25%;
+
+  background:
+    rgba(234, 182, 74, 0.28);
+
+  filter: blur(55px);
+
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+
+/* FEATURED PRICE/STATS */
+
+.feature-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.feature-stats > div {
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.feature-stats small {
+  display: block;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+.feature-stats b {
+  display: block;
+  font-size: 1rem;
+}
+
+
+/* PICKUP */
+
+.pickup-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.pickup-row small {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.pickup-row span {
+  padding: 8px 13px;
+  border-radius: 100px;
+  background: rgba(24, 181, 142, 0.12);
+  border: 1px solid rgba(24, 181, 142, 0.25);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .featured-trip {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-poster {
+    max-width: 420px;
+  }
+
+  .feature-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .featured-poster {
+    max-width: 100%;
+    border-radius: 22px;
+  }
+
+  .feature-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .featured-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
 }
