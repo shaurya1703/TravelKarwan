@@ -563,44 +563,37 @@
 
         <!-- GENERATED TRIPS -->
 
-         <!-- FEATURED CURRENT TRIP AS A SEPARATE BLOCK -->
-    <section class="section featured-wrap" id="featured-trip">
+         <!-- UPCOMING TRIPS - GENERATED FROM trips.js -->
+    <section class="section trips-section" id="trips">
       <div class="container">
-        <div class="featured-trip reveal">
-          <div class="featured-poster">
-            <img src="assets/shimla-jibhi-poster.png" alt="Shimla and Jibhi featured trip poster" />
-            <div class="poster-glow"></div>
-          </div>
-
-
-
-
-        <div class="coming-soon reveal">
-
+        <div class="section-head reveal">
           <div>
-
-            <span class="tiny">
-              More routes loading
-            </span>
-
-            <h3>
-              New departures will keep joining the Karwan.
-            </h3>
-
+            <span class="kicker">Upcoming departures</span>
+            <h2>Choose your<br><span>next story.</span></h2>
           </div>
-
-
-          <a
-            href="#plan"
-            class="text-link"
-          >
-            Request a destination →
-          </a>
-
+          <p>
+            The website is built to grow with Travel Karwan. New departures can be added to one simple trip list
+            and will automatically appear here.
+          </p>
         </div>
 
-      </div>
+        <div class="trip-filter reveal" id="tripFilters">
+          <button class="active" data-filter="all">All trips</button>
+          <button data-filter="weekend">Weekend</button>
+          <button data-filter="mountains">Mountains</button>
+          <button data-filter="corporate">Corporate</button>
+        </div>
 
+        <div class="trip-grid" id="tripGrid"></div>
+
+        <div class="coming-soon reveal">
+          <div>
+            <span class="tiny">More routes loading</span>
+            <h3>New departures will keep joining the Karwan.</h3>
+          </div>
+          <a href="#plan" class="text-link">Request a destination →</a>
+        </div>
+      </div>
     </section>
 
 
