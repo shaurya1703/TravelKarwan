@@ -1,569 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
 <head>
   <meta charset="UTF-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <meta
-    name="description"
-    content="Travel Karwan — curated group trips, weekend escapes, road trips and corporate getaways."
-  />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Travel Karwan — curated group trips, weekend escapes, road trips and corporate getaways." />
   <meta name="theme-color" content="#071b1b" />
-
   <title>Travel Karwan | Group Trips & Weekend Escapes</title>
 
-  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,800&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- MAIN CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-
-
 <body>
-
-  <!-- BACKGROUND EFFECTS -->
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
 
-
-  <!-- ======================================================
-       HEADER
-  ======================================================= -->
-
   <header class="site-header">
-
     <nav class="nav container">
-
-      <!-- LOGO -->
-      <a
-        class="brand"
-        href="#home"
-        aria-label="Travel Karwan Home"
-      >
-        <img
-          src="assets/travel-karwan-logo.png"
-          alt="Travel Karwan Logo"
-        />
+      <a class="brand" href="#home" aria-label="Travel Karwan Home">
+        <img src="assets/travel-karwan-logo.png" alt="Travel Karwan logo" />
       </a>
 
-
-      <!-- NAVIGATION -->
       <div class="nav-links" id="navLinks">
-
         <a href="#trips">Trips</a>
-
         <a href="#moods">Explore</a>
-
-        <a href="#why-us">Why Us</a>
-
-        <a href="#plan">Plan a Trip</a>
-
+        <a href="#why-us">Why us</a>
+        <a href="#plan">Plan a trip</a>
         <a href="#contact">Contact</a>
-
       </div>
 
-
-      <!-- NAV ACTIONS -->
       <div class="nav-actions">
-
-        <!-- THEME BUTTON -->
-        <button
-          class="theme-toggle"
-          id="themeToggle"
-          type="button"
-          aria-label="Toggle light and dark theme"
-        >
-          <span class="sun">☀</span>
-          <span class="moon">◐</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+          <span class="sun">☀</span><span class="moon">◐</span>
         </button>
-
-
-        <!-- WHATSAPP -->
-        <a
-          class="btn btn-wa desktop-only"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://wa.me/916388446797?text=Hi%20Travel%20Karwan%2C%20I%20want%20to%20know%20about%20your%20upcoming%20trips"
-        >
+        <a class="btn btn-wa desktop-only" target="_blank" rel="noopener"
+           href="https://wa.me/916388446797?text=Hi%20Travel%20Karwan%2C%20I%20want%20to%20know%20about%20your%20upcoming%20trips.">
           WhatsApp
         </a>
-
-
-        <!-- MOBILE MENU -->
-        <button
-          class="menu-btn"
-          id="menuBtn"
-          type="button"
-          aria-label="Open menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
-
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
       </div>
-
     </nav>
-
   </header>
 
-
-
-  <!-- ======================================================
-       MAIN
-  ======================================================= -->
-
   <main>
-
-
-    <!-- ======================================================
-         LIVE / NEWS TICKER
-    ======================================================= -->
-
-    <section
-      class="live-strip"
-      aria-label="Featured departure"
-    >
-
-      <div class="live-badge">
-
-        <span></span>
-
-        NOW BOARDING
-
-      </div>
-
-
+    <!-- NEWS / LIVE DEPARTURE TICKER -->
+    <section class="live-strip" aria-label="Featured departure">
+      <div class="live-badge"><span></span> NOW BOARDING</div>
       <div class="ticker-clip">
-
         <div class="ticker-track">
-
-          <a href="#featured-trip">
-            Kanpur → Shimla + Jibhi •
-            4 Nights / 5 Days •
-            ₹8,499 • Limited Seats • View Departure
-          </a>
-
-          <a href="#featured-trip">
-            Delhi NCR / Gurugram → Shimla + Jibhi •
-            4 Nights / 5 Days •
-            ₹7,499 • Limited Seats • View Departure
-          </a>
-
+          <a href="#featured-trip">Kanpur / Delhi NCR → Shimla + Jibhi • 4 Nights / 5 Days • ₹9,999 • Limited Seats • View Departure</a>
+          <a href="#featured-trip">Kanpur / Delhi NCR → Shimla + Jibhi • 4 Nights / 5 Days • ₹9,999 • Limited Seats • View Departure</a>
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- ======================================================
-         HERO SECTION
-    ======================================================= -->
-
-    <section
-      class="hero"
-      id="home"
-    >
-
-      <!-- AMBIENT BACKGROUND -->
-      <div
-        class="hero-ambient"
-        aria-hidden="true"
-      >
-
-        <span class="orb o1"></span>
-
-        <span class="orb o2"></span>
-
-        <span class="orb o3"></span>
-
+    <!-- GENERIC BRAND HERO -->
+    <section class="hero" id="home">
+      <div class="hero-ambient" aria-hidden="true">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
       </div>
-
 
       <div class="container hero-grid">
-
-
-        <!-- HERO TEXT -->
-
         <div class="hero-copy reveal">
-
-          <div class="eyebrow">
-
-            <span class="pulse-dot"></span>
-
-            Curated group journeys
-
-          </div>
-
-
-          <h1>
-
-            Go farther.
-
-            <br>
-
-            <span>
-              Travel together.
-            </span>
-
-          </h1>
-
-
+          <div class="eyebrow"><span class="pulse-dot"></span> Curated group journeys</div>
+          <h1>Go farther.<br><span>Travel together.</span></h1>
           <p>
-
-            Weekend escapes, mountain road trips,
-            corporate getaways and unforgettable
-            group journeys — planned with comfort,
-            community and a little bit of adventure.
-
+            Weekend escapes, mountain road trips, corporate getaways and unforgettable group journeys —
+            planned with comfort, community and a little bit of adventure.
           </p>
-
 
           <div class="hero-actions">
-
-            <a
-              class="btn btn-primary"
-              href="#trips"
-            >
-              Explore Trips
-              <span>→</span>
-            </a>
-
-
-            <a
-              class="btn btn-ghost"
-              href="#plan"
-            >
-              Plan a Custom Trip
-            </a>
-
+            <a class="btn btn-primary" href="#trips">Explore trips <span>→</span></a>
+            <a class="btn btn-ghost" href="#plan">Plan a custom trip</a>
           </div>
-
-
-          <!-- HERO CATEGORIES -->
 
           <div class="hero-meta">
-
-            <div>
-              <b>Weekend</b>
-              <span>Escapes</span>
-            </div>
-
-            <div>
-              <b>Group</b>
-              <span>Departures</span>
-            </div>
-
-            <div>
-              <b>Corporate</b>
-              <span>Getaways</span>
-            </div>
-
-            <div>
-              <b>Road</b>
-              <span>Journeys</span>
-            </div>
-
+            <div><b>Weekend</b><span>Escapes</span></div>
+            <div><b>Group</b><span>Departures</span></div>
+            <div><b>Corporate</b><span>Getaways</span></div>
+            <div><b>Road</b><span>Journeys</span></div>
           </div>
-
         </div>
-
-
-
-        <!-- HERO ANIMATION -->
 
         <div class="hero-stage reveal delay-1">
-
-
           <div class="route-card glass tilt-card">
-
-
             <div class="route-top">
-
-              <span>
-                YOUR NEXT ESCAPE
-              </span>
-
-              <b>
-                Pick a mood. We’ll map the road.
-              </b>
-
+              <span>YOUR NEXT ESCAPE</span>
+              <b>Pick a mood. We’ll map the road.</b>
             </div>
 
-
-
-            <!-- SVG TRAVEL ROUTE -->
-
-            <svg
-              class="route-svg"
-              viewBox="0 0 620 390"
-              role="img"
-              aria-label="Animated travel route illustration"
-            >
-
+            <svg class="route-svg" viewBox="0 0 620 390" role="img" aria-label="Animated travel route illustration">
               <defs>
-
-                <linearGradient
-                  id="routeGradient"
-                  x1="0"
-                  x2="1"
-                >
-
-                  <stop
-                    offset="0%"
-                    stop-color="#eab64a"
-                  />
-
-                  <stop
-                    offset="100%"
-                    stop-color="#18b58e"
-                  />
-
+                <linearGradient id="routeGradient" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#eab64a"/>
+                  <stop offset="100%" stop-color="#18b58e"/>
                 </linearGradient>
-
               </defs>
-
-
-              <path
-                class="mountain-back"
-                d="M25 285 L120 150 L190 230 L300 80 L390 220 L455 140 L595 285"
-              />
-
-
-              <path
-                class="mountain-front"
-                d="M0 320 L95 230 L160 292 L250 175 L330 300 L420 220 L510 292 L620 205 L620 390 L0 390 Z"
-              />
-
-
-              <path
-                id="routePath"
-                class="route-path"
-                d="M35 328 C145 288 160 348 258 287 S393 212 460 245 S540 240 590 178"
-              />
-
-
-              <circle
-                cx="35"
-                cy="328"
-                r="8"
-                class="route-point"
-              />
-
-
-              <circle
-                cx="590"
-                cy="178"
-                r="8"
-                class="route-point"
-              />
-
-
+              <path class="mountain-back" d="M25 285 L120 150 L190 230 L300 80 L390 220 L455 140 L595 285" />
+              <path class="mountain-front" d="M0 320 L95 230 L160 292 L250 175 L330 300 L420 220 L510 292 L620 205 L620 390 L0 390 Z" />
+              <path id="routePath" class="route-path" d="M35 328 C145 288 160 348 258 287 S393 212 460 245 S540 240 590 178" />
+              <circle cx="35" cy="328" r="8" class="route-point"/>
+              <circle cx="590" cy="178" r="8" class="route-point"/>
               <g class="moving-bus">
-
-                <rect
-                  x="-17"
-                  y="-10"
-                  width="34"
-                  height="19"
-                  rx="5"
-                ></rect>
-
-                <circle
-                  cx="-10"
-                  cy="11"
-                  r="4"
-                ></circle>
-
-                <circle
-                  cx="10"
-                  cy="11"
-                  r="4"
-                ></circle>
-
+                <rect x="-17" y="-10" width="34" height="19" rx="5"></rect>
+                <circle cx="-10" cy="11" r="4"></circle>
+                <circle cx="10" cy="11" r="4"></circle>
               </g>
-
             </svg>
 
-
-
             <div class="route-tags">
-
-              <span>Mountains</span>
-
-              <span>Rivers</span>
-
-              <span>Bonfires</span>
-
-              <span>Good Company</span>
-
+              <span>Mountains</span><span>Rivers</span><span>Bonfires</span><span>Good company</span>
             </div>
-
           </div>
 
-
-
-          <div class="floating-note n1 glass">
-
-            <small>Travel Mode</small>
-
-            <b>Weekend Escape</b>
-
-          </div>
-
-
-          <div class="floating-note n2 glass">
-
-            <small>Best Part</small>
-
-            <b>New People, New Stories</b>
-
-          </div>
-
+          <div class="floating-note n1 glass"><small>Travel mode</small><b>Weekend Escape</b></div>
+          <div class="floating-note n2 glass"><small>Best part</small><b>New people, new stories</b></div>
         </div>
-
       </div>
-
-
-
-      <!-- BRAND MARQUEE -->
 
       <div class="brand-marquee">
-
         <div>
-
-          <span>TRAVEL</span>
-          <i>✦</i>
-
-          <span>EXPLORE</span>
-          <i>✦</i>
-
-          <span>UNWIND</span>
-          <i>✦</i>
-
-          <span>TOGETHER</span>
-          <i>✦</i>
-
-          <span>TRAVEL</span>
-          <i>✦</i>
-
-          <span>EXPLORE</span>
-          <i>✦</i>
-
-          <span>UNWIND</span>
-          <i>✦</i>
-
-          <span>TOGETHER</span>
-          <i>✦</i>
-
+          <span>TRAVEL</span><i>✦</i><span>EXPLORE</span><i>✦</i><span>UNWIND</span><i>✦</i><span>TOGETHER</span><i>✦</i>
+          <span>TRAVEL</span><i>✦</i><span>EXPLORE</span><i>✦</i><span>UNWIND</span><i>✦</i><span>TOGETHER</span><i>✦</i>
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- ======================================================
-         UPCOMING TRIPS
-         trips.js se dynamically generate honge
-    ======================================================= -->
-
-    <section
-      class="section trips-section"
-      id="trips"
-    >
-
-      <div class="container">
-
-
-        <div class="section-head reveal">
-
-          <div>
-
-            <span class="kicker">
-              Upcoming Departures
-            </span>
-
-            <h2>
-
-              Choose your
-
-              <br>
-
-              <span>
-                next story.
-              </span>
-
-            </h2>
-
-          </div>
-
-
-          <p>
-
-            Discover upcoming Travel Karwan departures.
-            From weekend escapes to mountain journeys,
-            choose the experience that feels right for you.
-
-          </p>
-
-        </div>
-
-
-
-        <!-- FILTER -->
-
-        <div
-          class="trip-filter reveal"
-          id="tripFilters"
-        >
-
-          <button
-            class="active"
-            data-filter="all"
-          >
-            All Trips
-          </button>
-
-          <button data-filter="weekend">
-            Weekend
-          </button>
-
-          <button data-filter="mountains">
-            Mountains
-          </button>
-
-          <button data-filter="corporate">
-            Corporate
-          </button>
-
-        </div>
-
-
-
-        <!-- GENERATED TRIPS -->
-
-        <section class="section trips-section" id="trips">
+    <!-- UPCOMING TRIPS - GENERATED FROM trips.js -->
+    <section class="section trips-section" id="trips">
       <div class="container">
         <div class="section-head reveal">
           <div>
@@ -614,8 +179,8 @@
 
             <div class="feature-stats">
               <div><small>Duration</small><b>4N / 5D</b></div>
-              <div><small>From</small><b>₹8,499</b></div>
-              <div><small>Group</small><b>20–25</b></div>
+              <div><small>From</small><b>₹9,999</b></div>
+              <div><small>Group</small><b>24–25</b></div>
             </div>
 
             <div class="pickup-row">
@@ -627,7 +192,6 @@
               <div>Shimla Special Visit</div>
               <div>Jibhi Waterfall</div>
               <div>Jalori Pass</div>
-              <div>Mini Thailand</div>
               <div>Serolsar Lake</div>
               <div>Tirthan Valley</div>
               <div>Bonfire & Scenic Stay</div>
@@ -645,1306 +209,231 @@
       </div>
     </section>
 
-
-
-    <!-- ======================================================
-         FEATURED CURRENT TRIP
-    ======================================================= -->
-
-    <section
-      class="section featured-wrap"
-      id="featured-trip"
-    >
-
+    <!-- EXPLORE BY MOOD -->
+    <section class="section moods" id="moods">
       <div class="container">
-
-
-        <div class="featured-trip reveal">
-
-
-          <!-- ===============================
-               FEATURED POSTER
-          ================================ -->
-
-          <div class="featured-poster">
-
-            <img
-              src="assets/shimla-jibhi-poster.png"
-              alt="Travel Karwan Shimla and Jibhi 4 Nights 5 Days Trip Poster"
-              loading="lazy"
-            />
-
-            <div class="poster-glow"></div>
-
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker">Explore by mood</span>
+            <h2>Not sure where?<br><span>Start with how.</span></h2>
           </div>
-
-
-
-          <!-- ===============================
-               FEATURED TRIP INFORMATION
-          ================================ -->
-
-          <div class="featured-copy">
-
-
-            <div class="featured-label">
-
-              <span>
-                FEATURED DEPARTURE
-              </span>
-
-              <b>
-                LIVE
-              </b>
-
-            </div>
-
-
-
-            <h2>
-
-              Shimla energy.
-
-              <br>
-
-              <span>
-                Jibhi calm.
-              </span>
-
-            </h2>
-
-
-
-            <p>
-
-              Experience the best of Himachal with
-              Travel Karwan — from the lively streets
-              of Shimla to the peaceful rivers,
-              forests, waterfalls and mountain views
-              of Jibhi.
-
-            </p>
-
-
-
-            <!-- TRIP STATS -->
-
-            <div class="feature-stats">
-
-
-              <div>
-
-                <small>
-                  Duration
-                </small>
-
-                <b>
-                  4N / 5D
-                </b>
-
-              </div>
-
-
-              <div>
-
-                <small>
-                  Kanpur
-                </small>
-
-                <b>
-                  ₹8,499
-                </b>
-
-              </div>
-
-
-              <div>
-
-                <small>
-                  Delhi / Gurugram
-                </small>
-
-                <b>
-                  ₹7,499
-                </b>
-
-              </div>
-
-
-              <div>
-
-                <small>
-                  Group
-                </small>
-
-                <b>
-                  20–25
-                </b>
-
-              </div>
-
-            </div>
-
-
-
-            <!-- PICKUP -->
-
-            <div class="pickup-row">
-
-              <small>
-                Pickup Options
-              </small>
-
-              <span>
-                Kanpur
-              </span>
-
-              <span>
-                Delhi NCR / Gurugram
-              </span>
-
-            </div>
-
-
-
-            <!-- HIGHLIGHTS -->
-
-            <div class="featured-highlights">
-
-              <div>
-                Shimla Special Visit
-              </div>
-
-              <div>
-                Jibhi Waterfall
-              </div>
-
-              <div>
-                Jalori Pass
-              </div>
-
-              <div>
-                Serolsar Lake
-              </div>
-
-              <div>
-                Riverside Cafes
-              </div>
-
-              <div>
-                Mini Thailand
-              </div>
-
-              <div>
-                Bonfire Night
-              </div>
-
-              <div>
-                Scenic Mountain Stay
-              </div>
-
-            </div>
-
-
-
-            <!-- ACTIONS -->
-
-            <div class="featured-actions">
-
-
-              <button
-                class="btn btn-primary"
-                data-open-trip="shimla-jibhi"
-                type="button"
-              >
-
-                View Full Trip
-
-                <span>→</span>
-
-              </button>
-
-
-
-              <a
-                class="btn btn-ghost"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://wa.me/916388446797?text=Hi%20Travel%20Karwan%2C%20I%20want%20details%20for%20the%20Shimla%20%2B%20Jibhi%204%20Nights%205%20Days%20trip"
-              >
-
-                Ask on WhatsApp
-
-              </a>
-
-            </div>
-
-          </div>
-
+          <p>These are travel styles, not fixed packages — ideal for helping customers discover the kind of trip they want.</p>
         </div>
 
+        <div class="mood-grid">
+          <article class="mood-card mountain reveal">
+            <span>01</span><h3>Mountain Escapes</h3><p>Cool air, winding roads and slow mornings.</p><a href="#plan">Plan one →</a>
+          </article>
+          <article class="mood-card weekend reveal delay-1">
+            <span>02</span><h3>Weekend Breaks</h3><p>Short on leave, big on memories.</p><a href="#plan">Plan one →</a>
+          </article>
+          <article class="mood-card corporate reveal delay-2">
+            <span>03</span><h3>Corporate Getaways</h3><p>Team bonding beyond boardrooms.</p><a href="#plan">Plan one →</a>
+          </article>
+          <article class="mood-card road reveal">
+            <span>04</span><h3>Road Journeys</h3><p>More stops. More stories. Better company.</p><a href="#plan">Plan one →</a>
+          </article>
+        </div>
       </div>
-
     </section>
 
-
-
-   <!-- ======================================================
-     EXPLORE BY MOOD
-======================================================= -->
-
-<section class="section moods" id="moods">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-
-      <div>
-        <span class="kicker">Explore by Mood</span>
-
-        <h2>
-          Not sure where?
-          <br>
-          <span>Start with how.</span>
-        </h2>
-      </div>
-
-      <p>
-        Choose the kind of escape you're craving and let Travel Karwan
-        turn that mood into your next unforgettable journey.
-      </p>
-
-    </div>
-
-
-    <div class="mood-grid">
-
-      <!-- MOUNTAIN ESCAPES -->
-      <article class="mood-card mountain reveal">
-
-        <img
-          class="mood-bg"
-          src="assets/mountain-escapes.jpg"
-          alt="Mountain escape with scenic Himalayan views"
-          loading="lazy"
-        >
-
-        <div class="mood-overlay"></div>
-
-        <div class="mood-content">
-          <span class="mood-number">01</span>
-
-          <div class="mood-bottom">
-            <small>INTO THE HEIGHTS</small>
-
-            <h3>Mountain Escapes</h3>
-
-            <p>
-              Cool air, winding roads, peaceful valleys and
-              unforgettable mountain mornings.
-            </p>
-
-            <a href="#plan">
-              Plan This Escape <b>→</b>
-            </a>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- WEEKEND BREAKS -->
-      <article class="mood-card weekend reveal delay-1">
-
-        <img
-          class="mood-bg"
-          src="assets/weekend-breaks.jpg"
-          alt="Friends enjoying a weekend trip together"
-          loading="lazy"
-        >
-
-        <div class="mood-overlay"></div>
-
-        <div class="mood-content">
-          <span class="mood-number">02</span>
-
-          <div class="mood-bottom">
-            <small>ESCAPE THE ROUTINE</small>
-
-            <h3>Weekend Breaks</h3>
-
-            <p>
-              Short on leave? Pack your bags for quick escapes,
-              new places and big memories.
-            </p>
-
-            <a href="#plan">
-              Plan This Escape <b>→</b>
-            </a>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- CORPORATE GETAWAYS -->
-      <article class="mood-card corporate reveal delay-2">
-
-        <img
-          class="mood-bg"
-          src="assets/corporate-getaways.jpg"
-          alt="Corporate team enjoying a group getaway"
-          loading="lazy"
-        >
-
-        <div class="mood-overlay"></div>
-
-        <div class="mood-content">
-          <span class="mood-number">03</span>
-
-          <div class="mood-bottom">
-            <small>BEYOND THE BOARDROOM</small>
-
-            <h3>Corporate Getaways</h3>
-
-            <p>
-              Take your team beyond meetings with refreshing
-              destinations and memorable group experiences.
-            </p>
-
-            <a href="#plan">
-              Plan This Escape <b>→</b>
-            </a>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- ROAD JOURNEYS -->
-      <article class="mood-card road reveal">
-
-        <img
-          class="mood-bg"
-          src="assets/road-journeys.jpg"
-          alt="Scenic mountain road journey"
-          loading="lazy"
-        >
-
-        <div class="mood-overlay"></div>
-
-        <div class="mood-content">
-          <span class="mood-number">04</span>
-
-          <div class="mood-bottom">
-            <small>CHASE THE ROAD</small>
-
-            <h3>Road Journeys</h3>
-
-            <p>
-              Scenic highways, spontaneous stops and stories
-              that begin long before the destination.
-            </p>
-
-            <a href="#plan">
-              Plan This Escape <b>→</b>
-            </a>
-          </div>
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-    <!-- ======================================================
-         WHY TRAVEL KARWAN
-    ======================================================= -->
-
-    <section
-      class="section why-us"
-      id="why-us"
-    >
-
+    <!-- WHY US -->
+    <section class="section why-us" id="why-us">
       <div class="container">
-
-
         <div class="why-shell reveal">
-
-
           <div class="why-copy">
-
-            <span class="kicker">
-              Why Travel Karwan
-            </span>
-
-
-            <h2>
-
-              Built around people,
-
-              <br>
-
-              <span>
-                not just places.
-              </span>
-
-            </h2>
-
-
+            <span class="kicker">Why Travel Karwan</span>
+            <h2>Built around people,<br><span>not just places.</span></h2>
             <p>
-
-              We design group trips around comfort,
-              communication and shared experiences —
-              so travellers can focus on enjoying
-              the journey.
-
+              We design group trips around comfort, communication and the shared experience —
+              so travellers can focus on enjoying the journey.
             </p>
-
           </div>
-
-
-
           <div class="why-list">
-
-
-            <div>
-
-              <b>01</b>
-
-              <span>
-
-                <strong>
-                  Curated Routes
-                </strong>
-
-                <small>
-                  Balanced travel, sightseeing and downtime.
-                </small>
-
-              </span>
-
-            </div>
-
-
-
-            <div>
-
-              <b>02</b>
-
-              <span>
-
-                <strong>
-                  Direct Support
-                </strong>
-
-                <small>
-                  Connect directly with the Travel Karwan team.
-                </small>
-
-              </span>
-
-            </div>
-
-
-
-            <div>
-
-              <b>03</b>
-
-              <span>
-
-                <strong>
-                  Multiple Pickup Options
-                </strong>
-
-                <small>
-                  Convenient route-based boarding options.
-                </small>
-
-              </span>
-
-            </div>
-
-
-
-            <div>
-
-              <b>04</b>
-
-              <span>
-
-                <strong>
-                  Group Experiences
-                </strong>
-
-                <small>
-                  Travel together and create new stories.
-                </small>
-
-              </span>
-
-            </div>
-
-
+            <div><b>01</b><span><strong>Curated routes</strong><small>Balanced travel, sightseeing and downtime.</small></span></div>
+            <div><b>02</b><span><strong>Direct support</strong><small>Customers can reach the travel manager on WhatsApp.</small></span></div>
+            <div><b>03</b><span><strong>Multiple pickup options</strong><small>Route-based boarding points can be coordinated.</small></span></div>
+            <div><b>04</b><span><strong>Made to grow</strong><small>Future trips will be published soon.</small></span></div>
           </div>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- ======================================================
-         BOOK / PLAN TRIP
-    ======================================================= -->
-
-    <section
-      class="section plan-section"
-      id="plan"
-    >
-
+    <!-- PLAN / BOOK -->
+    <section class="section plan-section" id="plan">
       <div class="container plan-grid">
-
-
-        <!-- LEFT -->
-
         <div class="plan-copy reveal">
-
-
-          <span class="kicker">
-            Book or Request a Trip
-          </span>
-
-
-          <h2>
-
-            Tell us where
-
-            <br>
-
-            <span>
-              you want to go.
-            </span>
-
-          </h2>
-
-
+          <span class="kicker">Book or request a trip</span>
+          <h2>Tell us where<br><span>you want to go.</span></h2>
           <p>
-
-            Register for an upcoming departure
-            or request a custom group or corporate trip.
-
-            Your form creates a ready-to-send
-            WhatsApp enquiry for the Travel Karwan team.
-
+            Register for an upcoming departure or request a custom group/corporate trip.
+            Your form creates a ready-to-send WhatsApp message for the Travel Karwan manager.
           </p>
-
-
-
-          <!-- MANAGER -->
 
           <div class="manager glass">
-
-            <div class="avatar">
-              AS
-            </div>
-
-
-            <div>
-
-              <small>
-                Travel Manager
-              </small>
-
-              <strong>
-                Arnav Singh
-              </strong>
-
-              <a href="tel:+916388446797">
-                +91 63884 46797
-              </a>
-
-              <a href="tel:+916391815639">
-                +91 63918 15639
-              </a>
-
-            </div>
-
+            <div class="avatar">AS</div>
+            <div><small>Travel Manager</small><strong>Arnav Singh</strong><a href="tel:+916388446797">+91 63884 46797</a></div>
           </div>
-
         </div>
 
-
-
-        <!-- ==================================================
-             BOOKING FORM
-        =================================================== -->
-
-        <form
-          class="booking-form reveal delay-1"
-          id="bookingForm"
-        >
-
-
+        <form class="booking-form reveal delay-1" id="bookingForm">
           <div class="form-title">
-
-            <div>
-
-              <span>
-                Travel Registration
-              </span>
-
-              <b>
-                Passenger & Trip Details
-              </b>
-
-            </div>
-
+            <div><span>Travel Registration</span><b>Passenger & Trip Details</b></div>
             <span class="form-dot"></span>
-
           </div>
 
-
-
-          <!-- PERSONAL -->
-
-          <div class="form-section-label">
-            Personal Details
-          </div>
-
-
+          <div class="form-section-label">Personal Details</div>
 
           <div class="field-grid">
-
-
             <label>
-
-              <span>
-                Full Name
-              </span>
-
-              <input
-                id="fullName"
-                name="fullName"
-                type="text"
-                placeholder="Enter your full name"
-                required
-              >
-
+              <span>Full Name</span>
+              <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required>
             </label>
 
-
-
             <label>
-
-              <span>
-                Contact Number
-              </span>
-
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                inputmode="numeric"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                placeholder="10-digit mobile number"
-                required
-              >
-
+              <span>Contact Number</span>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
             </label>
 
-
-
             <label>
-
-              <span>
-                Email ID
-              </span>
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="example@email.com"
-                required
-              >
-
+              <span>Email ID</span>
+              <input id="email" name="email" type="email" placeholder="example@email.com" required>
             </label>
 
-
-
             <label>
-
-              <span>
-                Age
-              </span>
-
-              <input
-                id="age"
-                name="age"
-                type="number"
-                min="1"
-                max="100"
-                placeholder="Your age"
-                required
-              >
-
+              <span>Age</span>
+              <input id="age" name="age" type="number" min="1" max="100" placeholder="Your age" required>
             </label>
 
-
-
             <label>
-
-              <span>
-                Gender
-              </span>
-
-              <select
-                id="gender"
-                name="gender"
-                required
-              >
-
-                <option value="">
-                  Select Gender
-                </option>
-
-                <option value="Male">
-                  Male
-                </option>
-
-                <option value="Female">
-                  Female
-                </option>
-
-                <option value="Other">
-                  Other
-                </option>
-
-                <option value="Prefer not to say">
-                  Prefer not to say
-                </option>
-
+              <span>Gender</span>
+              <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+                <option>Prefer not to say</option>
               </select>
-
             </label>
-
-
 
             <label>
-
-              <span>
-                City
-              </span>
-
-              <input
-                id="city"
-                name="city"
-                type="text"
-                placeholder="Your city"
-                required
-              >
-
+              <span>City</span>
+              <input id="city" name="city" type="text" placeholder="Your city" required>
             </label>
-
           </div>
-
-
 
           <label>
-
-            <span>
-              Address
-            </span>
-
-            <textarea
-              id="address"
-              name="address"
-              rows="3"
-              placeholder="Enter your complete address"
-              required
-            ></textarea>
-
+            <span>Address</span>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your complete address" required></textarea>
           </label>
 
-
-
-          <!-- TRAVEL -->
-
-          <div class="form-section-label">
-            Travel Details
-          </div>
-
-
+          <div class="form-section-label">Travel Details</div>
 
           <div class="field-grid">
-
-
             <label>
-
-              <span>
-                Group of People
-              </span>
-
-              <input
-                id="groupPeople"
-                name="groupPeople"
-                type="number"
-                min="1"
-                max="50"
-                placeholder="Total travellers"
-                required
-              >
-
+              <span>Group of People</span>
+              <input id="groupPeople" name="groupPeople" type="number" min="1" max="50" placeholder="Total number of travellers" required>
             </label>
 
-
-
             <label>
-
-              <span>
-                Travel Category
-              </span>
-
-              <select
-                id="travelCategory"
-                name="travelCategory"
-                required
-              >
-
-                <option value="">
-                  Select Category
-                </option>
-
-                <option value="Solo">
-                  Solo
-                </option>
-
-                <option value="Group of Friends">
-                  Group of Friends
-                </option>
-
-                <option value="Corporate Friends">
-                  Corporate Friends
-                </option>
-
-                <option value="Couple">
-                  Couple
-                </option>
-
-                <option value="Family">
-                  Family
-                </option>
-
+              <span>Travel Category</span>
+              <select id="travelCategory" name="travelCategory" required>
+                <option value="">Select category</option>
+                <option>Solo</option>
+                <option>Group of Friends</option>
+                <option>Corporate Friends</option>
+                <option>Couple</option>
+                <option>Family</option>
               </select>
-
             </label>
-
-
 
             <label>
-
-              <span>
-                Select Trip
-              </span>
-
-              <select
-                id="tripSelect"
-                name="tripSelect"
-                required
-              >
-
-                <!--
-                trips.js/script.js can populate this.
-                Fallback option below prevents empty form.
-                -->
-
-                <option value="">
-                  Select Trip
-                </option>
-
-                <option value="Shimla + Jibhi">
-                  Shimla + Jibhi — 4N / 5D
-                </option>
-
-              </select>
-
+              <span>Select Trip</span>
+              <select id="tripSelect" name="tripSelect" required></select>
             </label>
-
-
 
             <label>
-
-              <span>
-                Pickup Point
-              </span>
-
-              <select
-                id="pickup"
-                name="pickup"
-                required
-              >
-
-                <option value="">
-                  Select Pickup Point
-                </option>
-
-                <option value="Kanpur">
-                  Kanpur
-                </option>
-
-                <option value="Delhi NCR / Gurugram">
-                  Delhi NCR / Gurugram
-                </option>
-
-                <option value="Other">
-                  Other / Discuss on WhatsApp
-                </option>
-
+              <span>Pickup Point</span>
+              <select id="pickup" name="pickup" required>
+                <option value="">Select pickup point</option>
+                <option>Kanpur</option>
+                <option>Delhi NCR / Gurugram</option>
+                <option>Other / Discuss on WhatsApp</option>
               </select>
-
             </label>
-
           </div>
 
-
-
           <label>
-
-            <span>
-              Additional Message
-              <em>Optional</em>
-            </span>
-
-            <textarea
-              id="note"
-              name="note"
-              rows="4"
-              placeholder="Special request, room preference, pickup query, etc."
-            ></textarea>
-
+            <span>Additional Message <em>optional</em></span>
+            <textarea id="note" name="note" rows="4" placeholder="Any special request, room preference, pickup query, etc."></textarea>
           </label>
-
-
-
-          <!-- CONSENT -->
 
           <label class="consent">
-
-            <input
-              id="consent"
-              type="checkbox"
-              required
-            >
-
-            <span>
-
-              I agree to be contacted by
-              Travel Karwan regarding this
-              travel enquiry / booking.
-
-            </span>
-
+            <input id="consent" type="checkbox" required>
+            <span>I agree to be contacted by Travel Karwan regarding this travel enquiry / booking.</span>
           </label>
 
-
-
-          <!-- SUBMIT -->
-
-          <button
-            class="btn btn-primary full"
-            type="submit"
-          >
-
-            Continue on WhatsApp
-
-            <span>→</span>
-
+          <button class="btn btn-primary full" type="submit">
+            Continue on WhatsApp <span>→</span>
           </button>
 
-
-
           <p class="privacy">
-
-            Your details are used only to prepare
-            your travel enquiry.
-
-            Final seat availability, booking
-            confirmation and payment details
-            are confirmed directly by
-            Travel Karwan.
-
+            Your details are used only to prepare your travel enquiry. Final seat availability and payment details are confirmed directly by the Travel Karwan manager.
           </p>
-
-
         </form>
-
       </div>
-
     </section>
 
-
-
-    <!-- ======================================================
-         CONTACT
-    ======================================================= -->
-
-    <section
-      class="section contact"
-      id="contact"
-    >
-
+    <section class="section contact" id="contact">
       <div class="container contact-shell reveal">
-
-
         <div>
-
-          <span class="kicker">
-            Stay in the Loop
-          </span>
-
-          <h2>
-            Next trip dropping soon.
-          </h2>
-
-          <p>
-
-            Follow Travel Karwan for new departures,
-            early-bird registrations and road-trip updates.
-
-          </p>
-
+          <span class="kicker">Stay in the loop</span>
+          <h2>Next trip dropping soon.</h2>
+          <p>Follow Travel Karwan for new departures, early-bird registrations and road-trip updates.</p>
         </div>
-
-
-
         <div class="contact-actions">
-
-
-          <a
-            class="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://instagram.com/travel.karwan"
-          >
-
-            Instagram @travel.karwan
-
-          </a>
-
-
-
-          <a
-            class="btn btn-ghost"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://wa.me/916388446797?text=Hi%20Travel%20Karwan%2C%20please%20send%20me%20updates%20for%20upcoming%20trips"
-          >
-
-            Get Trip Updates
-
-          </a>
-
-
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://instagram.com/travel.karwan">Instagram @travel.karwan</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/916388446797?text=Hi%20Travel%20Karwan%2C%20please%20send%20me%20updates%20for%20upcoming%20trips.">Get trip updates</a>
         </div>
-
       </div>
-
     </section>
-
-
   </main>
 
-
-
-  <!-- ======================================================
-       FOOTER
-  ======================================================= -->
-
   <footer>
-
-
     <div class="container footer-grid">
-
-
       <div class="footer-brand">
-
-        <img
-          src="assets/travel-karwan-logo.png"
-          alt="Travel Karwan Logo"
-        >
-
-        <p>
-          Journeys Beyond Borders.
-        </p>
-
+        <img src="assets/travel-karwan-logo.png" alt="Travel Karwan logo">
+        <p>Journeys Beyond Borders.</p>
       </div>
-
-
-
       <div class="footer-nav">
-
-        <a href="#trips">
-          Trips
-        </a>
-
-        <a href="#moods">
-          Explore
-        </a>
-
-        <a href="#plan">
-          Book
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
+        <a href="#trips">Trips</a><a href="#moods">Explore</a><a href="#plan">Book</a><a href="#contact">Contact</a>
       </div>
-
-
-
       <div class="footer-manager">
-
-        <small>
-          Travel Manager
-        </small>
-
-        <b>
-          Arnav Singh
-        </b>
-
-        <a href="tel:+916388446797">
-          +91 63884 46797
-        </a>
-
-        <a href="tel:+916391815639">
-          +91 63918 15639
-        </a>
-
+        <small>Travel Manager</small><b>Arnav Singh</b><a href="tel:+916388446797">+91 63884 46797</a>
       </div>
-
-
     </div>
-
-
-
-    <div class="container footer-bottom">
-
-      © <span id="year"></span>
-
-      Travel Karwan •
-
-      Travel • Explore • Unwind • Together
-
-    </div>
-
-
+    <div class="container footer-bottom">© <span id="year"></span> Travel Karwan • Travel • Explore • Unwind • Together</div>
   </footer>
 
-
-
-  <!-- ======================================================
-       FLOATING WHATSAPP BUTTON
-  ======================================================= -->
-
-  <a
-    class="floating-wa"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://wa.me/916388446797?text=Hi%20Travel%20Karwan%2C%20I%20want%20to%20know%20about%20your%20upcoming%20trips"
-    aria-label="Chat with Travel Karwan on WhatsApp"
-  >
-
-    <span>
-      WA
-    </span>
-
-    <b>
-      Chat With Us
-    </b>
-
+  <!-- FLOATING WHATSAPP -->
+  <a class="floating-wa" target="_blank" rel="noopener"
+     href="https://wa.me/916388446797?text=Hi%20Travel%20Karwan%2C%20I%20want%20to%20know%20about%20your%20upcoming%20trips."
+     aria-label="Chat on WhatsApp">
+    <span>WA</span><b>Chat with us</b>
   </a>
 
-
-
-  <!-- ======================================================
-       TRIP MODAL
-  ======================================================= -->
-
-  <div
-    class="modal"
-    id="tripModal"
-    aria-hidden="true"
-  >
-
-
-    <div
-      class="modal-backdrop"
-      data-close-modal
-    ></div>
-
-
-
-    <div
-      class="modal-panel"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Trip details"
-    >
-
-
-      <button
-        class="modal-close"
-        data-close-modal
-        type="button"
-        aria-label="Close trip details"
-      >
-        ×
-      </button>
-
-
+  <!-- TRIP MODAL -->
+  <div class="modal" id="tripModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
       <div id="modalContent"></div>
-
-
     </div>
-
   </div>
 
-
-
-  <!-- TOAST -->
-
-  <div
-    class="toast"
-    id="toast"
-    role="status"
-    aria-live="polite"
-  >
-
-    Opening WhatsApp with your travel request…
-
-  </div>
-
-
-
-  <!-- ======================================================
-       JAVASCRIPT
-  ======================================================= -->
+  <div class="toast" id="toast">Opening WhatsApp with your travel request…</div>
 
   <script src="trips.js"></script>
-
   <script src="script.js"></script>
-
-
 </body>
-
 </html>
